@@ -359,7 +359,7 @@ class Board:
     
     def can_build_city(self, player: 'Player', plot: Plot) -> bool:
         """Check if a settlement can be upgraded to a city"""
-        from .buildings import Settlement
+        from buildings import Settlement
         
         if not plot.building or not isinstance(plot.building, Settlement):
             return False

@@ -125,6 +125,6 @@ game.end_turn()
 ## Currently working on...
 
 - Complete hexagon adjacency mapping for accurate shared plots/paths
-- Interactive UI to input player decisions and track game states such as resources and Victory Points
+- Interactive Game Tracker with optional UI to input player decisions and track game states such as resources and Victory Points
 - AI players
 - Statistics tracking

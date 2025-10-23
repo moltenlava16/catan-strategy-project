@@ -47,7 +47,7 @@ def demo_setup_phase(game: Game):
             print(f"  Player {player.id}: no resources")
 
 
-def demo_main_game(game: Game, num_turns: int = 10):
+def demo_main_game(game: Game, num_turns: int = 20):
     """Demo the main game phase"""
     print("\n=== MAIN GAME DEMO ===")
     
@@ -155,6 +155,8 @@ def main():
     print("=" * 60)
     print("SETTLERS OF CATAN - Game Demo")
     print("=" * 60)
+    print("How many turns should the demo simulate? (default 20): ")
+    turns_to_sim = int(input())
     
     # Create and setup game
     game = Game(num_players=4)
@@ -168,7 +170,7 @@ def main():
     demo_setup_phase(game)
     
     # Run main game for demo
-    demo_main_game(game, num_turns=20)
+    demo_main_game(game, num_turns=turns_to_sim)
     
     # Show final statistics
     if game.winner:
@@ -189,4 +191,13 @@ if __name__ == "__main__":
     # Set random seed for reproducibility (comment out for random games)
     # random.seed(42)
     
-    main()
+    print("Enter \"demo\" to run a sample game of Settlers of Catan. Enter \"tracker\" to open the Game Tracker instead.")
+    play_demo = input()
+    if play_demo == "demo":
+        main()
+    elif play_demo == "tracker":
+        # TODO: implement game tracker interface
+        print("Game Tracker is not yet implemented.")
+    else:
+        print("Invalid input. Exiting.")
+        exit(0)
