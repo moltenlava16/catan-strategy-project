@@ -1,0 +1,15 @@
+# Settlers of Catan - Python Implementation
+# No external dependencies required - uses only Python standard library
+
+# Python 3.8+ recommended for:
+# - Type hints with forward references (TYPE_CHECKING)
+# - Dataclasses (though not currently used, available for extension)
+# - Enum support
+# - Random module for game mechanics
+
+# Optional dependencies for future enhancements:
+# pygame>=2.0.0        # For graphical UI
+# numpy>=1.19.0        # For efficient board calculations
+# networkx>=2.5        # For advanced road network analysis
+# flask>=2.0.0         # For web-based multiplayer
+# pytest>=6.0.0        # For unit testing
