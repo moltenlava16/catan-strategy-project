@@ -101,7 +101,7 @@ Alice: 5 Victory Points
   Longest Road: 2 VP
 ```
 
-## Rules Enforced
+## Rules
 
 ### Building Rules
 - Settlements must be 2+ paths apart
@@ -147,26 +147,3 @@ Player 2 dev cards: [56% knight | 20% victory_point | 8% road_building | 8% inve
 # After playing a Knight:
 Player 2 dev cards: knight (resolved)
 ```
-
-## Tips
-
-1. **Be Precise**: Plot and path numbers must match the board setup exactly
-2. **Track Everything**: The more information you provide, the better the tracking
-3. **Use Unknown**: When you don't know something, mark it as "unknown"
-4. **Regular Saves**: Use `!save` periodically to preserve game state
-5. **Check Victory Points**: Use `!vp` to monitor the race to 10 points
-
-## Limitations
-
-- **GUI**: Currently text-based; visual board coming in future updates
-- **Plot/Path Numbering**: Requires manual mapping to physical board
-- **Save/Load**: Framework exists but full persistence not implemented
-- **Undo**: Limited undo functionality for complex actions
-
-## Future Enhancements
-
-- Visual board representation
-- AI assistant for strategy suggestions
-- Statistical analysis of game patterns
-- Network multiplayer support
-- Mobile app integration
